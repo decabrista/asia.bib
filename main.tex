@@ -12,17 +12,15 @@
 \usepackage{textcomp}
 \usepackage{tabularx,booktabs} 
 \usepackage{color,soul}
-\newfontfamily\sil{Charis SIL}
+\newfontfamily\sil{DejaVu Sans}
 \newfontfamily\burm{Padauk}
-\newfontfamily\hana{HanaMinA}
+\newfontfamily\hana{Noto Sans CJK SC}
 
 \usepackage[normalem]{ulem}
 %\setCJKmainfont{AR PL UMing TW}
 \newcommand\comment[1]{\textcolor{red}{#1}}
 %\usepackage[left=2cm,right=2cm,top=3cm,bottom=3cm]{geometry}
 \usepackage[left=2.5cm, right=2.5cm, top=3cm, bottom=3cm]{geometry}
-\setmainfont[Mapping=tex-text,Scale=1.2]{FreeSerif}
-\setsansfont[Mapping=tex-text,Scale=1.0]{FreeSans}
 \newcommand\commentmattis[1]{\textcolor{DarkGreen}{[#1] \#lingulist}}
 \newcommand\commentnathan[1]{\textcolor{blue}{[#1] \#nh36}}
 \usepackage[round]{natbib}
@@ -71,16 +69,20 @@
 \begin{document}
 \maketitle
 
-This is the \verb=asia.bib= master project. THe best practice for updating \verb=asia.bib= is as follows.
+This is the \verb=asia.bib= master project. In order to update \verb=asia.bib=, please do as follows.
 
 \begin{itemize}
-\item Modify the file upstream: go to \url{https://github.com/decabrista/asia.bib} in order.
-\item Make sure that this file compiles without errors -- this file shows every single item in asia.bib in order for there not to be any compilation-breaking.
+\item Download \verb=asia.bib=, change it, and reupload it here.
+\item Make sure that this Overleaf V2 project compiles without errors -- this file shows every single item in \verb=asia.bib= so that we can be sure that the compilation is not broken.
+\item Push the changes back into the GitHub project, so that we can keep a tracklog of the changes: click on the left-top ``Menu'', then ``Sync -- GitHub'', then click on this button:
+\begin{center}
+\includegraphics[width=10.5em]{Doc/a.png}
+\end{center}
+\item Pull the changes in the Overleaf project where the bibliography item is needed:
+\begin{center}
+\includegraphics[width=15em]{Doc/refresh.png}
+\end{center}
 \end{itemize}
-
-"Pulling" is required on the individual projects.
-
-
 
 \nocite{*} % Shows the bibliography items here
 
